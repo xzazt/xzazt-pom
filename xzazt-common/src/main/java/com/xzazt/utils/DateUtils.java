@@ -12,22 +12,22 @@ public class DateUtils {
      * 获取当前时间
      * @return
      */
-    private static Date getCurrentDate(){
+    public static Date getCurrentDate(){
         Calendar instance = Calendar.getInstance();
         Date date = instance.getTime();
         return date;
     }
-    private static String dateParseToString(Date date){
+    public static String dateParseToString(Date date){
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(format);
         String format = simpleDateFormat.format(date);
         return format;
     }
-    private static String dateParseToString(Date date,String pattern){
+    public static String dateParseToString(Date date,String pattern){
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
         String format = simpleDateFormat.format(date);
         return format;
     }
-    private static Date getCurrentFirstTime(){
+    public static Date getCurrentFirstTime(){
         Calendar instance = Calendar.getInstance();
         instance.set(Calendar.HOUR_OF_DAY,0);
         instance.set(Calendar.MINUTE,0);
@@ -35,7 +35,7 @@ public class DateUtils {
         Date time = instance.getTime();
         return time;
     }
-    private static Date getCurrentLastTime(){
+    public static Date getCurrentLastTime(){
         Calendar instance = Calendar.getInstance();
         instance.set(Calendar.HOUR_OF_DAY,23);
         instance.set(Calendar.MINUTE,59);
