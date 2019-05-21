@@ -22,11 +22,11 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-        <!--<dependency>
-            <groupId>xzazt-pom</groupId>
+        <dependency>
+            <groupId>xzazt-common</groupId>
             <artifactId>xzazt-common</artifactId>
             <version>1.0-SNAPSHOT</version>
-        </dependency>-->
+        </dependency>
     </dependencies>
 
     <build>
